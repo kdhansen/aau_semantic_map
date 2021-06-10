@@ -1,4 +1,4 @@
-from semanticmap.HomographicProjection import HomographicProjection
+from semanticmap import HomographicProjection
 import numpy as np
 from scipy.spatial.transform import Rotation as R
 import matplotlib.pyplot as plt
