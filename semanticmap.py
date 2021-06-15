@@ -36,8 +36,8 @@ class HomographicProjection:
             cam_transform = np.identity(4)
             cam_transform[0:3, 3] = [0, 0, 1.5]
             cam_transform[0:3, 0:3] = np.array([[  cos(45),  0,  sin(45)],
-                                                [        0,  0,        0],
-                                                [ -sin(45), -1,  cos(45)]])
+                                                [        0,  1,        0],
+                                                [ -sin(45),  0,  cos(45)]])
             plane_transform = np.identity(4)
             intrinsics = np.array([[257,   0, 320],
                                    [  0, 257, 240],
